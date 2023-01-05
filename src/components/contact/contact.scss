@@ -1,0 +1,132 @@
+@import "../../global.scss";
+
+.swal-button {
+                color: black;
+                background-color: $mainColor;
+                border: none;
+                border-radius: 10px;
+                font-weight: 500;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: black;
+                    color: $mainColor;
+                    outline: none;
+                }
+
+                &:focus{
+                    outline: none;
+                }
+  }
+  .swal-modal {
+    background-color: black;
+    border: 3px solid $mainColor;
+    overflow: hidden;
+  }
+
+  .swal-title {
+    color: $mainColor;
+}
+
+  .swal-text {
+      color: $mainColor;
+  }
+
+.contact{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+
+    @include mobile {
+        flex-direction: column;
+      }
+
+    .left{        
+        flex: 1;
+        overflow: hidden;
+        @include mobile {
+            flex: .8;
+          }
+        img{
+            width:90%;
+            margin-left: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include mobile {
+                height:120%;
+                margin-left: 14px;
+              }
+        }
+    }
+    .right{     
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $mainColor;
+
+        h2{
+            font-size: 30px;
+        }
+        form{
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include mobile {
+                height: 50%;
+                position: relative;
+                margin-bottom: 200px;
+                
+              }
+
+            input{
+                width: 300px;
+                height: 30px;
+                font-size: 14px;
+                margin-top: 10px;
+
+                @include mobile {
+                    width: 200px;
+                    height: 20px;
+                    margin-bottom: 0px;
+                  }
+            }
+            textarea{
+                width: 300px;
+                height: 200px;
+                font-size: 14px;
+                margin-top: 10px;
+
+                @include mobile {
+                    width: 200px;
+                    height: 100px;
+                    margin-top: 10px;
+                  }
+            }
+
+            button{
+                width: 150px;
+                height: 30px;
+                color: black;
+                background-color: white;
+                border: none;
+                border-radius: 10px;
+                font-weight: 500;
+                margin-top: 10px;
+                cursor: pointer;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+            span{
+                color: $darkGreen;
+            }
+        }
+    }
+}
