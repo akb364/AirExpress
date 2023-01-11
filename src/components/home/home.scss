@@ -1,0 +1,106 @@
+@import "../../global.scss";
+
+.intro{
+    background-color: $mainColor;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: all 1s ease-in-out;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .top{
+        overflow: hidden;
+        position: relative;
+        flex: 0.6;
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &.active{
+                position: relative;
+                right: 150px;
+            }
+
+            @include mobile{
+                position: relative;
+                text-align: center;
+                top: 0;
+                justify-content: start;
+                &.active{
+                    position: relative;
+                    right: 0px;
+                }
+            }
+            hr{
+                margin: 0.5em 0 0.5em 0;
+                width: 60%;
+                height: 2px;
+                background-color: $secondaryColor;
+                @include mobile{
+                    margin-left: 0px;
+                    width: 90%;
+                }
+            }
+            h1{
+                font-size: 5vw;
+                margin: 10px;
+                padding-bottom: .5em;
+                padding-top: .5em;
+                color: $secondaryColor;
+
+                @include mobile{
+                    font-size: 40px;
+                }
+            }
+            
+        }
+        
+}
+.middle{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding-bottom: .5em;
+    padding-top: 3em;
+
+    @include mobile{
+        display: inline;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+    
+    .icon{
+        font-size: 1vw;
+        margin-right: 15px;
+        margin-left: 15px;
+        @include mobile{
+            font-size: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    h3{
+        font-size: 2vw;
+        color: $secondaryColor;
+        @include mobile{
+                font-size: 30px;
+            }
+        
+    }
+}
+.bottom{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    flex: 0.4;
+}
+}

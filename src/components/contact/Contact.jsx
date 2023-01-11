@@ -45,7 +45,7 @@ export default function Contact() {
         <img src={logo} alt="" />
       </div>
       <div className="right">
-        <h2>Contact</h2>
+        <h2>Schedule an appointment</h2>
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" placeholder="Name" name="user_name" />
           <input type="text" placeholder="Email" name="user_email" />
@@ -56,7 +56,7 @@ export default function Contact() {
           />
           <textarea placeholder="Message" name="message"></textarea>
           <button type="submit">Send</button>
-          {messageOn && <span>Thanks, I will reply ASAP :)</span>}
+          {messageOn && <span>Thanks, We have recieved your message and will contact you as soon as possible.</span>}
         </form>
       </div>
     </div>
