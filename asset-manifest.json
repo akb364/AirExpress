@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AirExpress/static/css/main.cec74684.css",
+    "main.js": "/AirExpress/static/js/main.333aef32.js",
+    "static/media/logo.png": "/AirExpress/static/media/logo.166793b4d07d62ed19e4.png",
+    "static/media/globe.png": "/AirExpress/static/media/globe.c824dd0ff3908c759e82.png",
+    "index.html": "/AirExpress/index.html",
+    "main.cec74684.css.map": "/AirExpress/static/css/main.cec74684.css.map",
+    "main.333aef32.js.map": "/AirExpress/static/js/main.333aef32.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cec74684.css",
+    "static/js/main.333aef32.js"
+  ]
+}
