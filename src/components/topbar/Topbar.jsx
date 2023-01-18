@@ -1,12 +1,14 @@
 import "./topbar.scss";
 import { PhoneEnabled, Mail, Home } from "@material-ui/icons";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import FeedIcon from '@mui/icons-material/Feed';
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className="logo">
+          <a href="#home" className="logo">
             <Home className="icon"></Home>
           </a>
           <div className="itemContainer">
@@ -20,12 +22,21 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             </span>
           </div>
         </div>
-        <div className="right">
-        <div className="topBarButton">
-          <a className="button1" href="#contact">
-            Get a Free Estimate
+          <div className="middle">
+            <span>Air Express Heating and Cooling</span>
+          <a href="#intro" className="logo">
+            <FacebookIcon className="icon1"></FacebookIcon>
           </a>
-        </div>
+          <a href="#intro" className="logo">
+            <FeedIcon className="icon1"></FeedIcon>
+          </a>
+          </div>
+        <div className="right">
+          <div className="topBarButton">
+            <a className="button1" href="#contact">
+              Get a Free Estimate
+            </a>
+          </div>
           <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
             <span className="line1"></span>
             <span className="line2"></span>

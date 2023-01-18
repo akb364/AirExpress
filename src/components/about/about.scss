@@ -1,83 +1,97 @@
 @import "../../global.scss";
 
-.portfolio{
-    background-color: #000;
+.aboutUs {
+  background-color: $mainColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  h1 {
+    font-size: 50px;
+    color: $secondaryColor;
+    padding-bottom: 50px;
+    padding-top: 45px;
+
+    @include mobile {
+      font-size: 40px;
+    }
+  }
+  hr {
+    position: absolute;
+    top: 110px;
+    width: 30%;
+    height: 2px;
+    background-color: $secondaryColor;
+    @include mobile {
+      display: none;
+    }
+  }
+  .wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-
-    h1{
-        font-size: 50px;;
-        color: $mainColor;
-        padding-bottom: 50px;
-        padding-top: 100px;
-
-        @include mobile{
-            font-size: 40px;
-        }
+    width: 100%;
+    flex: 1;
+    @include mobile{
+      flex-direction: column;
     }
-    ul{
-        margin: 10px;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        color: $mainColor;
-
-        @include mobile{
-            flex-wrap: wrap;
-            margin: 10px 0;
-            justify-content: center;
+    .left {
+      flex: 1;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include mobile {
+        flex: 0.8;
+      }
+      img {
+        width: 80%;
+        @include mobile {
+          height: 120%;
+          margin-left: 14px;
         }
+      }
     }
-        .container{
-            width: 70%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-
-            @include mobile{
-                width: 100%;
-            }
-
-            .item{
-                width: 220px;
-                height: 150px;
-                border-radius: 20px;
-                border: 2px solid $secondaryColor;
-                margin: 10px 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                position: relative;
-                transition: all .5s ease;
-                cursor: pointer;
-
-                @include mobile{
-                    width: 130px;
-                    height: 100px;
-                    border-radius: 20px;
-                }
-
-                h3{
-                    position: absolute;
-                    font-size: 20px;
-                }
-                img{
-                    border-radius: 18px;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    z-index: 1;
-                }
-                &:hover{
-                    background-color: black;
-                    img{
-                        opacity: 0.2;
-                        z-index: 0;
-                    }
-                }
+    .right {
+      flex: .8;
+      display: flex;
+      width: 80%;
+      height: 50%;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      margin-right: 40px;
+      transition: all 1s ease;
+      @include mobile {
+        height: 250px;
+        margin: 10px 0;
+      }
+      .text {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: $mainColor;
+        color: $secondaryColor;
+        @include mobile {
+          font-size: 12px;
+          padding: 5px;
+          overflow: hidden;
         }
+      }
+      .signature {
+        padding: 10px;
+        border-radius: 10px;
+        color: $brickRed;
+        @include mobile {
+          font-size: 12px;
+          padding: 5px;
+          overflow: hidden;
+        }
+      }
     }
+  }
 }

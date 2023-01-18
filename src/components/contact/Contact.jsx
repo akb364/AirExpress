@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import swal from "sweetalert";
 import logo from "../../assets/logo.png";
+import BottomBar from "../bottomBar/BottomBar";
 
 export default function Contact() {
   const [messageOn, setMessageOn] = useState(false);
@@ -59,6 +60,7 @@ export default function Contact() {
           {messageOn && <span>Thanks, We have recieved your message and will contact you as soon as possible.</span>}
         </form>
       </div>
+      <BottomBar></BottomBar>
     </div>
   );
 }

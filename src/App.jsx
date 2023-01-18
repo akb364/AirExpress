@@ -1,7 +1,7 @@
 import Topbar from "./components/topbar/Topbar";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
-import Works from "./components/works/Works";
+import Services from "./components/services/Services";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
@@ -15,7 +15,7 @@ function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Home menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-        <Works />
+        <Services />
         <About />
         <Testimonials />
         <Contact />

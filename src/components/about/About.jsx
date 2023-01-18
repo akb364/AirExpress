@@ -1,82 +1,23 @@
-import PortfolioList from "../portfolioList/PortfolioList";
 import "./about.scss";
-import { useEffect, useState } from "react";
-import {
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio,
-  designPortfolio,
-  contentPortfolio,
-} from "../../data";
+import ACUnit from "../../assets/ACUnits.jpeg"
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("featured");
-  const [data, setData] = useState([]);
-
-  const list = [
-    {
-      id: "featured",
-      title: "Featured",
-    },
-    {
-      id: "web",
-      title: "Web App",
-    },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "branding",
-      title: "Branding",
-    },
-  ];
-
-  useEffect(() => {
-    switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
-        break;
-      case "web":
-        setData(webPortfolio);
-        break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
-        break;
-      default:
-        setData(featuredPortfolio);
-    }
-  }, [selected]);
   return (
-    <div className="portfolio" id="portfolio">
-      <h1>Portfolio</h1>
-      <ul>
-        {list.map((item) => (
-          <PortfolioList
-            title={item.title}
-            active={selected === item.id}
-            setSelected={setSelected}
-            id={item.id}
-          />
-        ))}
-      </ul>
-      <div className="container">
-        {data.map((d) => (
-          <div className="item">
-            <img src={d.img} alt="" />
-            <h3>{d.title}</h3>
+    <div className="aboutUs" id="aboutUs">
+      <h1>About The Owner</h1>
+      <hr />
+      <div className="wrapper">
+        <div className="left">
+          <img src={ACUnit} alt="" />
+        </div>
+        <div className="right">
+          <div className="text">
+          <h2>My name is Trint Lytle.  I am the owner of Air Express.  I have been in the HVAC business for almost 20 years.   I take pride in my work and in the company I have built. I believe that honesty truly is the best policy.  My techs are not paid on commission, so they are only going to recommend what is needed.  We are licensed and bonded and guarantee my work 100%. </h2>
           </div>
-        ))}
+          <div className="signature">
+            <h2>-Trint Lytle</h2>
+          </div>
+        </div>
       </div>
     </div>
   );

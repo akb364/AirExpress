@@ -3,7 +3,7 @@ import CircleIcon from "@mui/icons-material/Circle";
 
 export default function Intro({ menuOpen }) {
   return (
-    <div className="intro " >
+    <div className="home" id="home">
       <div className="top">
         <div className={"wrapper " + (menuOpen && "active")}>
           <h1>Welcome to Air Express</h1>
@@ -16,6 +16,9 @@ export default function Intro({ menuOpen }) {
             <h3 className="bottomText">Affordable Prices</h3>
           </div>
         </div>
+      </div>
+      <div className={"bottom " + (menuOpen && "active")}>
+        <div className={"box3 " + (menuOpen && "active")}><span>We provide services for residential and commercial properties.  In need of tune-ups, repairs, or replacement?  Look no further!  We are a well established business, servicing the east valley for over 15 years.  We are honest and do not mess around with selling you services or repairs you do not need.  Schedule a service call with us today!</span></div>
       </div>
     </div>
   );

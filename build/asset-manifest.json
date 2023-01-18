@@ -1,17 +1,15 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.8c6facee.css",
-    "main.js": "/Portfolio/static/js/main.069beb59.js",
-    "static/media/logo.png": "/Portfolio/static/media/logo.300aa1837cf59f39fc61.png",
-    "static/media/globe.png": "/Portfolio/static/media/globe.c824dd0ff3908c759e82.png",
-    "static/media/right-arrow.png": "/Portfolio/static/media/right-arrow.4a3b05197c70630a1504.png",
-    "static/media/twitter.png": "/Portfolio/static/media/twitter.94db4a073d271647bc82.png",
-    "index.html": "/Portfolio/index.html",
-    "main.8c6facee.css.map": "/Portfolio/static/css/main.8c6facee.css.map",
-    "main.069beb59.js.map": "/Portfolio/static/js/main.069beb59.js.map"
+    "main.css": "/AirExpress/static/css/main.7bc8bfe0.css",
+    "main.js": "/AirExpress/static/js/main.4d2e04e3.js",
+    "static/media/logo.png": "/AirExpress/static/media/logo.166793b4d07d62ed19e4.png",
+    "static/media/ACUnits.jpeg": "/AirExpress/static/media/ACUnits.ac72332885f26ca786d9.jpeg",
+    "index.html": "/AirExpress/index.html",
+    "main.7bc8bfe0.css.map": "/AirExpress/static/css/main.7bc8bfe0.css.map",
+    "main.4d2e04e3.js.map": "/AirExpress/static/js/main.4d2e04e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c6facee.css",
-    "static/js/main.069beb59.js"
+    "static/css/main.7bc8bfe0.css",
+    "static/js/main.4d2e04e3.js"
   ]
 }

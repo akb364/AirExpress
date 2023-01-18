@@ -1,0 +1,64 @@
+@import "../../global.scss";
+
+.bottombar {
+  background-color: $iceBlue;
+  color: $mainColor;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0px;
+  @include mobile {
+    bottom: 0px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .wrapper {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: left;
+    @include mobile {
+      overflow: hidden;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .logo1 {
+        font-size: 40px;
+        text-decoration: none;
+        color: inherit;
+      }
+      .itemContainer {
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        @include mobile {
+          margin-left: 40px;
+        }
+        .icon1 {
+          margin-top: 5px;
+          font-size: 40px;
+          @include mobile {
+            padding-right: 20px;
+          }
+        }
+        span {
+          font-size: 20px;
+          font-weight: 500;
+
+          a {
+            text-decoration: none;
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+}

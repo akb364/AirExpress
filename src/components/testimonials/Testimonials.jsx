@@ -1,48 +1,37 @@
 import "./testimonials.scss";
-import arrow from "../../assets/right-arrow.png";
-import twitter from "../../assets/twitter.png";
-import youtube from "../../assets/youtube.png";
-import linkedin from "../../assets/linkedin.png";
 
 export default function Testimonials() {
   const data = [
     {
       id: 1,
-      name: "Tom Durden",
-      title: "Senior Developer",
+      name: "Nicole C.",
+      title: "Chandler, AZ",
       img: "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: twitter,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+      desc: "Very honest and professional!  Had our A/C up and running in no time at reasonable fair price!  Thanks Trint!",
     },
     {
       id: 2,
-      name: "Alex Kalinski",
-      title: "Co-Founder of DELKA",
+      name: "Shannon C.",
+      title: "Chandler, AZ",
       img: "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: youtube,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem recusandae perspiciatis ducimus vel hic temporibus. ",
+      desc: "I cannot even begin to leave a great enough review! I am 8 months pregnant and got home from the store today to realize my AC was out. It didn't take long for my house to heat up at 105 degrees outside. I looked on Yelp for an AC repair company and I found this one. Trint told me he would call me back in 10 min to see if he could get someone out. He called back and he was here right away. He was professional, friendly and efficient. He diagnosed the problem, explained it to me in a way I could understand and then fixed the issue right away because he had the part on his truck. I will definitely be using them again and will refer them to everyone I know. Thank you!!!!",
       featured: true,
     },
     {
       id: 3,
-      name: "Martin Harold",
-      title: "CEO of ALBI",
+      name: "Simple C.",
+      title: "Gilbert, AZ",
       img: "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      icon: linkedin,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem",
+      desc: "Trint(owner) of Air Express came to estimate the cost of 2 AC units replacement his cost is great and didn't push us to change equipment unnecessarily. He repaired old unit(12 yrs old) then installed the new units for us 4th of July! Cleaned after finishing. Today we installed our new thermostats turned out we broke the transformer. We called and he came out fixed it and installed both thermostats no charge. If you looking for service your heating and cooling units, pls give him a call. This company have our business for life + our friends and family. ",
     },
   ];
   return (
-    <div className="testimonials" id="testimonials">
-      <h1>Testimonials</h1>
+    <div className="reviews" id="reviews">
+      <h1>Reviews</h1>
+      <hr />
       <div className="container">
         {data.map((d) => (
           <div className={d.featured ? "card featured" : "card"}>
-            <div className="top">
-              <img src={arrow} className="left" alt="" />
-              <img className="user" src={d.img} alt="" />
-              <img className="right" src={d.icon} alt="" />
-            </div>
             <div className="center">{d.desc}</div>
             <div className="bottom">
               <h3>{d.name}</h3>

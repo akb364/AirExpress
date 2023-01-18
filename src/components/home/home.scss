@@ -1,6 +1,6 @@
 @import "../../global.scss";
 
-.intro{
+.home{
     background-color: $mainColor;
     display: flex;
     flex-direction: column;
@@ -23,6 +23,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            position: relative;
+            transition: all 1s ease-in-out;
             &.active{
                 position: relative;
                 right: 150px;
@@ -98,9 +100,44 @@
     }
 }
 .bottom{
-    position: relative;
-    bottom: 0;
-    width: 100%;
     flex: 0.4;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    transition: all 1s ease-in-out;
+    div{
+        background-color: $brickRed;
+        border-radius: 10px;
+        width: 90%;
+        height: 70%;
+        padding: 10px;
+        color: $mainColor;
+        transition: all 1s ease-in-out;
+    }
+    &.active{
+        width:79%;
+        @include mobile{
+            width:90%;
+        }
+    }
+    .box3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        span{
+            font-size: 1.5vw;
+            @include mobile{
+                font-size: 5vw;
+            }
+        }
+        &.active{
+           background-color: $iceBlue;
+           color: $secondaryColor;
+        }
+    }
 }
 }
