@@ -28,6 +28,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             </a>
           </div>
         </div>
+        <div className="right"><span>2023 Air Express Heating and Cooling LLC</span></div>
       </div>
     </div>
   );

@@ -15,21 +15,21 @@ export default function Works() {
       icon: <BuildIcon className="serviceIcon"/>,
       title: "Tune-ups",
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
-      img: "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+      img: "https://media.istockphoto.com/id/1152020644/photo/close-up-of-air-conditioning-repair-repairman-on-the-floor-fixing-air-conditioning-system.jpg?s=612x612&w=0&k=20&c=bibXOKFBEqIWNLDq_ht4oRoxDqMj0yLGoEzpTQUNey0=",
     },
     {
       id: "2",
       icon: <ConstructionIcon className="serviceIcon"/>,
       title: "Repairs",
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+      img: "https://static.vecteezy.com/system/resources/thumbnails/006/714/862/small/air-conditioning-repair-man-hands-checking-and-fixing-modern-air-conditioning-system-technician-team-checking-leakage-air-conditioning-system-photo.jpg",
     },
     {
       id: "3",
       icon: <HomeRepairServiceIcon className="serviceIcon"/>,
       title: "Replacement",
       desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      img: "https://www.publicdomainpictures.net/pictures/10000/nahled/296-1240880976mhKH.jpg",
     },
   ];
 
@@ -64,7 +64,7 @@ export default function Works() {
               </div>
               <div className="right">
                 <img
-                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
+                  src={d.img}
                   alt=""
                 />
               </div>

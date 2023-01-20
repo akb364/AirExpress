@@ -18,9 +18,8 @@
   .wrapper {
     padding: 10px 30px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    float: left;
+    flex-direction: row;
+    width: 100%;
     @include mobile {
       overflow: hidden;
     }
@@ -28,8 +27,8 @@
     .left {
       display: flex;
       flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
+      justify-content: start;
+      float: left;
       .logo1 {
         font-size: 40px;
         text-decoration: none;
@@ -40,7 +39,7 @@
         align-items: center;
         margin-left: 30px;
         @include mobile {
-          margin-left: 40px;
+          margin-left: 10px;
         }
         .icon1 {
           margin-top: 5px;
@@ -58,6 +57,27 @@
             color: inherit;
           }
         }
+      }
+    }
+    .right{
+      width: 40%;
+      display: flex;
+      text-align: center;
+      color: $mainColor;
+      align-items: flex-end;
+      margin-right: 80px;
+      @include mobile{
+        overflow: hidden;
+        font-size: 15px;
+        align-items: center;
+        position: absolute;
+        left: 200px;
+        top: 15px;
+      }
+      span{
+        @include mobile{
+          overflow: hidden;
+        } 
       }
     }
   }

@@ -141,7 +141,10 @@
 
           img {
             width: 400px;
-            transform: rotate(-10deg);
+            border-radius: 10px;
+            @include mobile{
+              width: 180px;
+            }
           }
         }
       }
