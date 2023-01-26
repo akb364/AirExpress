@@ -5,7 +5,6 @@ export default function Portfolio() {
   return (
     <div className="aboutUs" id="aboutUs">
       <h1>About The Owner</h1>
-      <hr />
       <div className="wrapper">
         <div className="left">
           <img src={ACUnit} alt="" />

@@ -52,7 +52,8 @@ export default function Contact() {
           <input type="text" placeholder="Email" name="user_email" />
           <input
             type="text"
-            placeholder="Organization"
+            pattern="\d*"
+            placeholder="Phone Number"
             name="user_organization"
           />
           <textarea placeholder="Message" name="message"></textarea>

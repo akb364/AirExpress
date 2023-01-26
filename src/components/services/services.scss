@@ -3,6 +3,7 @@
 .services {
   background-color: $mainColor;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -11,18 +12,38 @@
     color: $secondaryColor;
     font-size: 50px;
     @include mobile {
-      margin-bottom: 10;
+      margin-bottom: 700px;
       font-size: 40px;
     }
   }
-  hr {
+  .middle {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding-bottom: 0.5em;
     position: absolute;
-    top: 110px;
-    width: 23%;
-    height: 2px;
-    background-color: $secondaryColor;
+    top: 100px;
     @include mobile {
-      display: none;
+      top: 60px;
+    }
+
+    @include mobile {
+      display: inline;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 0px;
+    }
+    h3 {
+      font-size: 2vw;
+      color: $secondaryColor;
+      border: 2px;
+      padding: 5px;
+      border-style: solid;
+      border-color: $secondaryColor;
+      @include mobile {
+        font-size: 30px;
+      }
     }
   }
 
@@ -34,20 +55,25 @@
       display: none;
     }
     &.left {
-      left: 100px;
+      left: 50px;
+      bottom: 250px;
       cursor: pointer;
     }
     &.right {
-      right: 100px;
+      right: 50px;
+      bottom: 250px;
       cursor: pointer;
     }
   }
 
   .slider {
-    height: 350px;
+    height: 500px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     left: 0;
+    bottom: 25px;
     transition: all 1s ease-out;
 
     @include mobile {
@@ -58,12 +84,13 @@
 
     .container {
       width: 100vw;
+      height: 500px;
       display: flex;
       align-items: center;
       justify-content: center;
 
       .item {
-        width: 700px;
+        width: 900px;
         height: 100%;
         background-color: $secondaryColor;
         border-radius: 20px;
@@ -79,7 +106,7 @@
 
         .left {
           flex: 4;
-          height: 80%;
+          height: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -103,31 +130,42 @@
               overflow: hidden;
 
               @include mobile {
-                width: 27px;
-                height: 27px;
+                width: 30px;
+                height: 30px;
               }
 
-              span {
-                color:$secondaryColor;
+              a {
+                font-size: 40px;
+                text-decoration: none;
+                color: $secondaryColor;
+                margin-right: 20px;
+              }
+              a:visited {
+                color: $secondaryColor;
+                text-decoration: none;
               }
             }
             h2 {
-              font-size: 20px;
+              font-size: 40px;
               @include mobile {
                 font-size: 13px;
               }
             }
             p {
-              font-size: 13px;
+              font-size: 20px;
               @include mobile {
                 display: none;
               }
             }
             span {
-              font-size: 12px;
+              font-size: 18px;
               font-weight: 600;
               text-decoration: underline;
+              color: $secondaryColor;
               cursor: pointer;
+            }
+            .quote{
+              color: $mainColor;
             }
           }
         }
@@ -136,13 +174,15 @@
           height: 100%;
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-end;
+          margin-right: 30px;
           overflow: hidden;
 
           img {
-            width: 400px;
-            border-radius: 10px;
-            @include mobile{
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            @include mobile {
               width: 180px;
             }
           }

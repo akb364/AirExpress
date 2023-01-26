@@ -15,7 +15,6 @@ export default function Testimonials() {
       title: "Chandler, AZ",
       img: "https://images.pexels.com/photos/428321/pexels-photo-428321.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       desc: "I cannot even begin to leave a great enough review! I am 8 months pregnant and got home from the store today to realize my AC was out. It didn't take long for my house to heat up at 105 degrees outside. I looked on Yelp for an AC repair company and I found this one. Trint told me he would call me back in 10 min to see if he could get someone out. He called back and he was here right away. He was professional, friendly and efficient. He diagnosed the problem, explained it to me in a way I could understand and then fixed the issue right away because he had the part on his truck. I will definitely be using them again and will refer them to everyone I know. Thank you!!!!",
-      featured: true,
     },
     {
       id: 3,
@@ -28,7 +27,6 @@ export default function Testimonials() {
   return (
     <div className="reviews" id="reviews">
       <h1>Reviews</h1>
-      <hr />
       <div className="container">
         {data.map((d) => (
           <div className={d.featured ? "card featured" : "card"}>

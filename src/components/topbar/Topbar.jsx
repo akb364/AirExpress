@@ -1,7 +1,6 @@
 import "./topbar.scss";
-import { PhoneEnabled, Mail, Home } from "@material-ui/icons";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import FeedIcon from '@mui/icons-material/Feed';
+import { Home } from "@material-ui/icons";
+import Logo from "../../assets/logo.png"
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
   return (
@@ -11,25 +10,14 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
           <a href="#home" className="logo">
             <Home className="icon"></Home>
           </a>
-          <div className="itemContainer">
-            <PhoneEnabled className="icon" />
-            <span>+1 480-888-9655</span>
-          </div>
-          <div className="itemContainer">
-            <Mail className="icon" />
-            <span>
-              <a href="mailto:airexpress@email.com">airexpress@email.com</a>{" "}
-            </span>
-          </div>
+          <img src={Logo} alt="" />
+          
         </div>
           <div className="middle">
-            <span>Air Express Heating and Cooling</span>
-          <a href="#intro" className="logo">
-            <FacebookIcon className="icon1"></FacebookIcon>
-          </a>
-          <a href="#intro" className="logo">
-            <FeedIcon className="icon1"></FeedIcon>
-          </a>
+          <a href="#services">Services</a>
+          <a href="#aboutUs">About Us</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
           </div>
         <div className="right">
           <div className="topBarButton">

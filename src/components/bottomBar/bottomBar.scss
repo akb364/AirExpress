@@ -66,6 +66,9 @@
       color: $mainColor;
       align-items: flex-end;
       margin-right: 80px;
+      position: absolute;
+      right: 0;
+      top: 25px;
       @include mobile{
         overflow: hidden;
         font-size: 15px;

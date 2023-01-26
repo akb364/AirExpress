@@ -44,7 +44,8 @@
         margin: 0.5em 0 0.5em 0;
         width: 60%;
         height: 2px;
-        background-color: $secondaryColor;
+        background-color: $iceBlue;
+        border: none;
         @include mobile {
           margin-left: 0px;
           width: 90%;
@@ -55,7 +56,7 @@
         margin: 10px;
         padding-bottom: 0.5em;
         padding-top: 0.5em;
-        color: $secondaryColor;
+        color: $brickRed;
 
         @include mobile {
           font-size: 40px;
@@ -80,6 +81,7 @@
 
     .icon {
       font-size: 1vw;
+      color: $brickRed;
       margin-right: 15px;
       margin-left: 15px;
       @include mobile {
@@ -90,7 +92,7 @@
     }
     h3 {
       font-size: 2vw;
-      color: $secondaryColor;
+      color: $brickRed;
       @include mobile {
         font-size: 30px;
       }
@@ -102,20 +104,20 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: relative;
     width: 100%;
     transition: all 1s ease-in-out;
     div {
-      background-color: $brickRed;
-      border-radius: 10px;
-      width: 90%;
+      width: 100%;
       height: 80%;
-      padding: 10px;
       color: $mainColor;
       transition: all 1s ease-in-out;
       overflow: hidden;
+      position: absolute;
+      bottom: 0;
     }
     &.active {
-      width: 79%;
+      width: 80%;
       @include mobile {
         width: 100%;
       }
@@ -127,16 +129,20 @@
       justify-content: center;
       text-align: center;
       overflow: hidden;
+      img{
+        width: 100%;
+        height: auto;
+        @include mobile{
+          position: absolute;
+          bottom: 0;
+        }
+      }
       span {
         font-size: 1.5vw;
         overflow: hidden;
         @include mobile {
           font-size: 4.6vw;
         }
-      }
-      &.active {
-        background-color: $iceBlue;
-        color: $secondaryColor;
       }
     }
   }

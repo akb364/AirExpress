@@ -1,17 +1,24 @@
 @import "../../global.scss";
 
-.aboutUs {
+.brands {
   background-color: $mainColor;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  .header{
+    width: 100%;
+    height:15%;
+    background-color: $iceBlue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   h1 {
     font-size: 50px;
     color: $secondaryColor;
-    padding-bottom: 50px;
-    padding-top: 45px;
 
     @include mobile {
       font-size: 40px;
@@ -32,6 +39,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     width: 100%;
     flex: 1;
     @include mobile{
@@ -41,13 +49,15 @@
       flex: 1;
       overflow: hidden;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       @include mobile {
         flex: 0.8;
       }
       img {
-        width: 80%;
+        width: 60%;
+        height: auto;
         border-radius: 15px;
         @include mobile {
           height: 100%;
@@ -56,7 +66,7 @@
       }
     }
     .right {
-      flex: .8;
+      flex: 1;
       display: flex;
       width: 80%;
       height: 50%;

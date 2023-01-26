@@ -5,6 +5,8 @@ import Services from "./components/services/Services";
 import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Menu from "./components/menu/Menu";
+import Brands from "./components/brands/Brands";
+
 import "./app.scss";
 import { useState } from "react";
 function App() {
@@ -17,6 +19,7 @@ function App() {
         <Home menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <Services />
         <About />
+        <Brands />
         <Testimonials />
         <Contact />
       </div>
