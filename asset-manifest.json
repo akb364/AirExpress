@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/AirExpress/static/css/main.bfe51226.css",
+    "main.css": "/AirExpress/static/css/main.778999c8.css",
     "main.js": "/AirExpress/static/js/main.19ccadf4.js",
     "static/media/truck.png": "/AirExpress/static/media/truck.531826ce18c8cac60a5e.png",
     "static/media/repairs.png": "/AirExpress/static/media/repairs.275aa41ab767f6377afb.png",
@@ -9,11 +9,11 @@
     "static/media/ACUnits.jpeg": "/AirExpress/static/media/ACUnits.ac72332885f26ca786d9.jpeg",
     "static/media/EastValley.jpeg": "/AirExpress/static/media/EastValley.e01c3e090bef4f1d0faf.jpeg",
     "index.html": "/AirExpress/index.html",
-    "main.bfe51226.css.map": "/AirExpress/static/css/main.bfe51226.css.map",
+    "main.778999c8.css.map": "/AirExpress/static/css/main.778999c8.css.map",
     "main.19ccadf4.js.map": "/AirExpress/static/js/main.19ccadf4.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfe51226.css",
+    "static/css/main.778999c8.css",
     "static/js/main.19ccadf4.js"
   ]
 }
