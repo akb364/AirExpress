@@ -18,9 +18,9 @@ function App() {
       <div className="sections">
         <Home menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <Services />
-        <About />
         <Brands />
         <Testimonials />
+        <About />
         <Contact />
       </div>
     </div>

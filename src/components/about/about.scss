@@ -6,31 +6,30 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  @include mobile{
+    overflow: hidden;
+  }
 
   h1 {
     font-size: 50px;
     color: $secondaryColor;
-    padding-bottom: 50px;
-    padding-top: 45px;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     @include mobile {
+      top: 80px;
       font-size: 40px;
-    }
-  }
-  hr {
-    position: absolute;
-    top: 110px;
-    width: 30%;
-    height: 2px;
-    background-color: $secondaryColor;
-    @include mobile {
-      display: none;
+      text-align: center;
+
     }
   }
   .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    overflow: hidden;
     align-items: center;
     width: 100%;
     flex: 1;
@@ -39,6 +38,7 @@
     }
     .left {
       flex: 1;
+      height: 100%;
       overflow: hidden;
       display: flex;
       justify-content: center;
@@ -47,11 +47,14 @@
         flex: 0.8;
       }
       img {
-        width: 80%;
+        width: 95%;
         border-radius: 15px;
+        border: 2px solid $secondaryColor;
         @include mobile {
-          height: 100%;
+          height: 40%;
           border-radius: 15px;
+          position: absolute;
+          top: 140px;
         }
       }
     }
@@ -59,17 +62,17 @@
       flex: .8;
       display: flex;
       width: 80%;
-      height: 50%;
+      height: 80%;
       border-radius: 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       text-align: left;
-      padding: 20px;
       margin-right: 40px;
       transition: all 1s ease;
       @include mobile {
         height: 250px;
+        width: 100%;
         margin: 10px 0;
       }
       .text {
@@ -78,7 +81,9 @@
         background-color: $mainColor;
         color: $secondaryColor;
         @include mobile {
-          font-size: 12px;
+          position: absolute;
+          top: 500px;
+          font-size: 16px;
           padding: 5px;
           overflow: hidden;
         }
@@ -88,6 +93,8 @@
         border-radius: 10px;
         color: $brickRed;
         @include mobile {
+          position: absolute;
+          bottom: 30px;
           font-size: 12px;
           padding: 5px;
           overflow: hidden;

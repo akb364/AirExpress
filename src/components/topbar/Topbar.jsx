@@ -15,8 +15,9 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
         </div>
           <div className="middle">
           <a href="#services">Services</a>
-          <a href="#aboutUs">About Us</a>
+          <a href="#brands">Brands and Location</a>
           <a href="#reviews">Reviews</a>
+          <a href="#aboutUs">About Us</a>
           <a href="#contact">Contact</a>
           </div>
         <div className="right">

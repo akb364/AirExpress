@@ -9,17 +9,18 @@
   top: 0;
   z-index: 3;
   transition: all 1s ease;
+  overflow: hidden;
 
-  .MuiSvgIcon-root{
+  .MuiSvgIcon-root {
     font-size: 2rem;
   }
 
-  img{
+  img {
     height: 3.5vw;
     width: auto;
     margin-left: 20px;
 
-    @include mobile{
+    @include mobile {
       width: 130px;
       margin-left: 0px;
       height: auto;
@@ -41,37 +42,14 @@
         text-decoration: none;
         color: inherit;
         margin-right: 20px;
-        @include mobile{
-          margin-right: 10px;
-        }
-      }
-      .itemContainer {
-        display: flex;
-        align-items: center;
-        margin-left: 2vw;
-
+        transition: 0.15s ease;
         @include mobile {
-          display: none;
-        }
-        @media screen and (max-width:1230px){
-          display: none;
-        }
-
-        .icon {
-          font-size: 2vw;
           margin-right: 10px;
-          @include mobile{
-           font-size: 60px;
-          }
+          margin-top: 5px;
+          position: relative;
         }
-        span {
-          font-size: 1.3vw;
-          font-weight: 500;
-
-          a {
-            text-decoration: none;
-            color: inherit;
-          }
+        &:hover {
+          color: $secondaryColor;
         }
       }
     }
@@ -95,15 +73,10 @@
         font-size: 1.5vw;
         font-weight: 500;
         color: inherit;
-        transition: 1s ease;
-        &:hover{
-          color: #000;
+        transition: 0.15s ease;
+        &:hover {
+          color: $secondaryColor;
         }
-      }
-      .icon1 {
-        font-size: 35px;
-        margin-right: 10px;
-        display: block;
       }
     }
     .button1 {
@@ -120,7 +93,7 @@
       font-weight: 300;
       color: #ffffff;
       text-align: center;
-      transition: all 0.2s;
+      transition: all 1s ease;
     }
     .button1:hover {
       color: $brickRed;
@@ -132,13 +105,15 @@
         justify-content: center;
         align-items: center;
         height: 40px;
+        width: 150px;
+        overflow: hidden;
       }
     }
     .right {
       display: flex;
       justify-content: center;
 
-      @include mobile{
+      @include mobile {
         flex: 1;
         flex-direction: row;
       }
@@ -154,7 +129,7 @@
         justify-content: space-between;
         cursor: pointer;
         @include mobile {
-          margin-top: 10px;
+          margin-top: 5px;
           position: absolute;
           right: 15px;
         }
@@ -164,7 +139,7 @@
           height: 3px;
           background-color: $mainColor;
           transform-origin: left;
-          transition: all 2s ease;
+          transition: all 1s ease;
         }
       }
     }
@@ -172,7 +147,23 @@
 
   &.active {
     background-color: $iceBlue;
-    color: #000;
+    color: $secondaryColor;
+
+    .left {
+      .logo {
+          &:hover {
+            color: $mainColor;
+          }
+      }
+    }
+
+    .middle {
+      a {
+        &:hover {
+          color: $mainColor;
+        }
+      }
+    }
 
     .button1 {
       overflow: auto;
@@ -186,7 +177,7 @@
       float: right;
       color: $secondaryColor;
       text-align: center;
-      transition: all 0.2s;
+      transition: all 1s ease;
     }
     .button1:hover {
       color: $iceBlue;
@@ -194,8 +185,12 @@
     }
     @media all and (max-width: 30em) {
       a.button1 {
-        display: block;
-        margin: 0.4em auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 150px;
+        overflow: hidden;
       }
     }
     .hamburger {

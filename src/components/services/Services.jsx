@@ -43,7 +43,7 @@ export default function Works() {
 
   return (
     <div className="services" id="services">
-      <div>
+      <div className="header">
         <h1>Our Services</h1>
       </div>
       <div className="middle">

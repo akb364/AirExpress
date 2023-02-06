@@ -45,6 +45,26 @@
         text-align: center;
     }
 
+    .contact{
+        background-color: $iceBlue;
+        @include mobile{
+            position: absolute;
+            bottom: 30px;
+            background-color: $iceBlue;
+            left: 30px;
+        }
+    }
+    .nav{
+        display: none;
+        @include mobile{
+            display: block;
+            position: absolute;
+            top: 140px;
+            left: 50px;
+
+        }
+    }
+
     li{
         margin-bottom: 50px;
         display: flex;
