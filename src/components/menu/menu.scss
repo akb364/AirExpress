@@ -1,101 +1,85 @@
 @import "../../global.scss";
 
-.menu{
-    width: 300px;
-    height: 100vh;
+.menu {
+  width: 300px;
+  height: 100vh;
+  background-color: $iceBlue;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+
+  &.active {
+    right: 0;
+  }
+
+  .AirExpress {
+    position: absolute;
+    top: 80px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .hrTop {
+    position: absolute;
+    top: 110px;
+    width: 90%;
+    margin: 0.5em 0 0.5em 0;
+    height: 2px;
+    background-color: $secondaryColor;
+    border: none;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 300;
+    color: #000;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact {
     background-color: $iceBlue;
-    position: fixed;
-    top: 0;
-    right: -300px;
-    z-index: 2;
+  }
+
+  li {
+    margin-bottom: 50px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    transition: all 1s ease;
-
-    &.active{
-        right: 0;
+    .icon {
+      padding-right: 10px;
     }
-
-    .AirExpress{
-        position: absolute;
-        top: 80px;
-        font-size: 18px;
-        font-weight: 500;
+    a {
+      font-size: inherit;
+      color: inherit;
+      text-decoration: none;
+      &:hover {
+        font-weight: 800;
+      }
     }
-    hr{
-        position: absolute;
-        top: 100px;
-        width: 90%;
-        margin: 0.5em 0 0.5em 0;
-        height: 2px;
-        background-color: $secondaryColor;
-        border: none;
+    span {
+      font-weight: 500;
+      font-size: 20px;
     }
-
-    ul{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        font-size: 30px;
-        font-weight: 300;
-        color: #000;
-        width: 100%;
-        text-align: center;
+  }
+  .socials {
+    position: absolute;
+    bottom: 0;
+    .logo {
+      color: inherit;
+      text-decoration: none;
+      margin-left: 20px;
     }
-
-    .contact{
-        background-color: $iceBlue;
-        @include mobile{
-            position: absolute;
-            bottom: 30px;
-            background-color: $iceBlue;
-            left: 30px;
-        }
+    .icon1 {
+      font-size: 50px;
     }
-    .nav{
-        display: none;
-        @include mobile{
-            display: block;
-            position: absolute;
-            top: 140px;
-            left: 50px;
-
-        }
-    }
-
-    li{
-        margin-bottom: 50px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        .icon{
-            padding-right: 10px;
-        }
-        a{
-            font-size: inherit;
-            color: inherit;
-            text-decoration: none;
-            &:hover{
-                font-weight: 800;
-            }
-        }
-        span{
-            font-weight: 500;
-            font-size: 20px;
-        }
-    }
-    .socials{
-        position: absolute;
-        bottom: 0;
-        .logo{
-            color: inherit;
-            text-decoration: none;
-            margin-left: 20px;
-        }
-        .icon1{
-            font-size: 50px;
-        }
-    }
+  }
 }

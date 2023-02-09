@@ -21,7 +21,7 @@ export default function Testimonials() {
       name: "Simple C.",
       title: "Gilbert, AZ",
       img: "https://images.pexels.com/photos/3863793/pexels-photo-3863793.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      desc: "Trint(owner) of Air Express came to estimate the cost of 2 AC units replacement his cost is great and didn't push us to change equipment unnecessarily. He repaired old unit(12 yrs old) then installed the new units for us 4th of July! Cleaned after finishing. Today we installed our new thermostats turned out we broke the transformer. We called and he came out fixed it and installed both thermostats no charge. If you looking for service your heating and cooling units, pls give him a call. This company have our business for life + our friends and family. ",
+      desc: "Air express rocks ,great value, professional and honest. They don't try to up sell you. ",
     },
   ];
   return (
@@ -35,6 +35,13 @@ export default function Testimonials() {
               <h3>{d.name}</h3>
               <h4>{d.title}</h4>
             </div>
+          </div>
+        ))}
+      </div>
+      <div className="mobile">
+        {data.map((d) => (
+          <div className="review">
+            "{d.desc}" -{d.name}
           </div>
         ))}
       </div>

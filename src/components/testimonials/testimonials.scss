@@ -13,12 +13,36 @@
     height: 100%;
   }
 
+  .mobile {
+    display: none;
+    @include mobile {
+      display: block;
+      color: $brickRed;
+      font-style: italic;
+      font-size: 2vh;
+      font-weight: 500;
+    }
+
+    .review {
+      @include mobile {
+        background-color: $secondaryColor;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+    }
+  }
+
   h1 {
     font-size: 50px;
     color: $secondaryColor;
 
     @include mobile {
       font-size: 50px;
+      position: relative;
+      top: 30px;
     }
   }
 
@@ -30,10 +54,9 @@
     justify-content: center;
 
     @include mobile {
+      display: none;
       height: 85%;
       flex-direction: column;
-      position: relative;
-      bottom: 20px;
     }
 
     .card {
@@ -52,17 +75,21 @@
       transition: all 1s ease;
 
       @include mobile {
+        display: none;
+        position: relative;
+        overflow: hidden;
+        top: 10px;
         margin-left: 5px;
         margin-right: 5px;
         margin-bottom: 10px;
         box-shadow: none;
-        width: 300px;
+        width: 330px;
         height: 80%;
       }
 
       &:hover {
         transform: scale(1.1);
-        @include mobile{
+        @include mobile {
           transform: none;
         }
       }
@@ -84,7 +111,7 @@
         flex-direction: column;
         position: absolute;
         bottom: 0;
-        @include mobile{
+        @include mobile {
           text-align: center;
         }
         h3 {

@@ -25,6 +25,9 @@
       margin-left: 0px;
       height: auto;
     }
+    @media screen and (max-height: 700px) {
+      width: 100px;
+    }
   }
 
   .wrapper {
@@ -107,6 +110,11 @@
         height: 40px;
         width: 150px;
         overflow: hidden;
+        @media screen and (max-height: 700px) {
+          width: 100px;
+          font-size: 10px;
+          height: 30px;
+        }
       }
     }
     .right {
@@ -133,6 +141,9 @@
           position: absolute;
           right: 15px;
         }
+        @media screen and (max-height: 700px) {
+          top: 18px;
+        }
 
         span {
           width: 100%;
@@ -151,9 +162,9 @@
 
     .left {
       .logo {
-          &:hover {
-            color: $mainColor;
-          }
+        &:hover {
+          color: $mainColor;
+        }
       }
     }
 

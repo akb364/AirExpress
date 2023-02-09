@@ -7,40 +7,8 @@ export default function Menu({ menuOpen, setMenuOpen }) {
   return (
     <div className={"menu " + (menuOpen && "active")}>
       <span className="AirExpress">Air Express Heating and Cooling</span>
-      <hr />
+      <hr className="hrTop"/>
       <ul>
-        <div className="nav">
-          <li onClick={() => setMenuOpen(false)}>
-            <span>
-              <a href="#home">Home</a>
-            </span>
-          </li>
-          <li onClick={() => setMenuOpen(false)}>
-            <span>
-              <a href="#services">Services</a>
-            </span>
-          </li>
-          <li onClick={() => setMenuOpen(false)}>
-            <span>
-              <a href="#brands">Brands and Locations</a>
-            </span>
-          </li>
-          <li onClick={() => setMenuOpen(false)}>
-            <span>
-              <a href="#reviews">Reviews</a>
-            </span>
-          </li>
-          <li onClick={() => setMenuOpen(false)}>
-            <span>
-              <a href="#aboutUs">About</a>
-            </span>
-          </li>
-          <li onClick={() => setMenuOpen(false)}>
-            <span>
-              <a href="#contact">Contact</a>
-            </span>
-          </li>
-        </div>
         <div className="contact">
           <li>
             <PhoneEnabled className="icon" />
@@ -74,23 +42,6 @@ export default function Menu({ menuOpen, setMenuOpen }) {
           <FeedIcon className="icon1"></FeedIcon>
         </a>
       </div>
-      {/* <ul>
-        <li onClick={() => setMenuOpen(false)}>
-          <a href="#home">Home</a>
-        </li>
-        <li onClick={() => setMenuOpen(false)}>
-          <a href="#services">Services</a>
-        </li>
-        <li onClick={() => setMenuOpen(false)}>
-          <a href="#aboutUs">About Us</a>
-        </li>
-        <li onClick={() => setMenuOpen(false)}>
-          <a href="#reviews">Reviews</a>
-        </li>
-        <li onClick={() => setMenuOpen(false)}>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul> */}
     </div>
   );
 }

@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: relative;
   .wrapper {
     display: flex;
@@ -16,6 +17,7 @@
     flex: 1;
     @include mobile {
       flex-direction: column;
+      overflow: hidden;
       justify-content: center;
       align-items: center;
     }
@@ -32,16 +34,23 @@
       transition: all 1s ease;
       @include mobile {
         flex-direction: row;
-        height: 250px;
-        margin: 10px 0;
+        margin-right: 0px;
+        padding-left: 0px;
       }
       .container {
         overflow: hidden;
-        @include mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include mobile {
           display: flex;
           flex-direction: column;
           justify-content: center;
+          width: 100%;
+          height: 100%;
           align-items: center;
+          margin-bottom: 30px;
         }
 
         .header {
@@ -50,16 +59,20 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          padding-bottom: 10px;
+          overflow: hidden;
           h1 {
             font-size: 50px;
+            padding-top: 40px;
             color: $secondaryColor;
-            position: absolute;
-            top: 60px;
-            
+            overflow: hidden;
+
             @include mobile {
+              padding-top: 0px;
               font-size: 40px;
-              top: 40px;
+              display: flex;
+            }
+            @media screen and (max-height: 780px) {
+              font-size: 30px;
             }
           }
         }
@@ -71,16 +84,18 @@
           color: $secondaryColor;
           text-align: center;
           @include mobile {
-            position: absolute;
-            top: 270px;
-            font-size: 16px;
-            padding: 5px;
+            font-size: 14px;
+            padding: 0 5px 0 5px;
             overflow: hidden;
+            position: relative;
+          }
+          @media screen and (max-height: 780px) {
+            font-size: 12px;
           }
         }
       }
       img {
-        width: 98%;
+        width: 90%;
         height: auto;
         border-radius: 15px;
         margin-bottom: 30px;
@@ -89,16 +104,19 @@
         border-style: solid;
         margin-top: 40px;
         @include mobile {
-          position: absolute;
-          top: 70px;
           height: auto;
-          width: 65%;
+          width: 70%;
           border-radius: 15px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        @media screen and (max-height: 780px) {
+          width: 45%;
         }
       }
     }
     .right {
-      flex: 1;
+      flex: 0.7;
       display: flex;
       height: 100%;
       border-radius: 10px;
@@ -109,23 +127,30 @@
       overflow: hidden;
       transition: all 1s ease;
       @include mobile {
+        flex: 1;
         flex-direction: row;
-        padding: 5px;
+        padding: 0px;
         height: 250px;
+        margin: 0;
       }
       .container {
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        @include mobile{
+        @include mobile {
           display: flex;
           flex-direction: column;
-          justify-content: center;
+          width: 100%;
           align-items: center;
-          height: 50vh;
+          height: 100%;
         }
 
         .header {
           width: 100%;
+          overflow: hidden;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -133,12 +158,17 @@
           h1 {
             font-size: 50px;
             color: $secondaryColor;
-            position: absolute;
-            top: 60px;
-            
+            padding-top: 40px;
+
             @include mobile {
-              top: 480px;
+              position: static;
+              overflow: hidden;
+              display: flex;
               font-size: 40px;
+              padding-top: 0px;
+            }
+            @media screen and (max-height: 780px) {
+              font-size: 30px;
             }
           }
         }
@@ -150,30 +180,43 @@
           color: $secondaryColor;
           text-align: center;
           @include mobile {
-            position: absolute;
-            bottom: 210px;
-            font-size: 16px;
-            margin-top: 0px;
-            padding: 5px;
+            position: relative;
+            display: block;
+            font-size: 14px;
+            margin: 20px 0px;
+            padding: 0 5px 10px 5px;
             overflow: hidden;
           }
+          @media screen and (max-height: 780px) {
+            font-size: 12px;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: $brickRed;
         }
       }
       img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 90%;
         border-color: black;
         border-width: 2px;
         border-style: solid;
         height: auto;
         border-radius: 15px;
-        margin-bottom: 30px;
-        margin-top: 20px;
+        margin-right: 0;
+        margin-top: 40px;
         @include mobile {
-          margin-top: 5px;
-          position: absolute;
-          bottom:0;
-          width: 60%;
+          margin-top: 0px;
+          width: 65%;
           border-radius: 15px;
+          position: relative;
+        }
+        @media screen and (max-height: 780px) {
+          width: 45%;
         }
       }
     }

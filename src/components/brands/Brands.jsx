@@ -15,8 +15,8 @@ export default function Brands() {
 
             <div className="text">
               <h2>
-                Here at Air Express Heating and cooling, we service any brand of
-                AC unit. Additionally, we sell Trane, Daikin, and Goodman AC
+                Here at Air Express Heating and cooling, we service any AC unit
+                brand. Additionally, we sell Trane, Daikin, and Goodman AC
                 units. All of our technicians are fully certified and will
                 provide the best HVAC service possible.
               </h2>
@@ -30,11 +30,13 @@ export default function Brands() {
             </div>
             <div className="text">
               <h2>
-                We service most areas in the East Valley. This includes San tan
-                valley, Chandler, Scottsdale, Gilbert, mesa, and Queen creek.
+                Air Express services the Phoenix Metropolitan Area, this
+                includes San Tan Valley, Chandler, Scottsdale, Gilbert, Mesa,
+                and Queen creek! Give us a call now or send us a message via our
+                <a  href="#contact"> contact page</a>.
               </h2>
             </div>
-            <img className="map" src={map} alt="" />
+            <img src={map} alt="" />
           </div>
         </div>
       </div>

@@ -14,10 +14,10 @@
     @include mobile {
       scroll-snap-type: none;
       width: 100%;
-      height: calc(100vh - 90px);
+      height: -webkit-fill-available;
       background-color: $mainColor;
       position: relative;
-      top: 30px;
+      top: 70px;
       scroll-behavior: smooth;
       scrollbar-width: none; //for firefox
     }
