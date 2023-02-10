@@ -6,17 +6,17 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  @include mobile{
+  @include mobile {
     overflow: hidden;
   }
 
   h1 {
+    padding-top: 50px;
     font-size: 50px;
     color: $secondaryColor;
     @include mobile {
       font-size: 40px;
       text-align: center;
-
     }
   }
   .wrapper {
@@ -27,7 +27,7 @@
     align-items: center;
     width: 100%;
     flex: 1;
-    @include mobile{
+    @include mobile {
       flex-direction: column;
     }
     .left {
@@ -38,23 +38,25 @@
       justify-content: center;
       align-items: center;
       @include mobile {
-        flex: .3;
+        flex: 0.3;
         height: 70%;
       }
       img {
-        width: 95%;
+        min-width: 75%;
         border-radius: 15px;
         border: 2px solid $secondaryColor;
+        margin-left: 10px;
+        max-height: 400px;
         @include mobile {
+          margin-left: 0px;
           height: auto;
           width: 90%;
           border-radius: 15px;
         }
-        @media screen and (max-height: 780px) {
+        @media screen and (max-height: 772px) {
           width: 70%;
           height: auto;
-          
-          }
+        }
       }
     }
     .right {
@@ -67,10 +69,11 @@
       justify-content: center;
       text-align: left;
       margin-right: 40px;
+      margin-left: 40px;
       transition: all 1s ease;
       @include mobile {
         align-items: center;
-        flex: .6;
+        flex: 0.6;
         width: 100%;
         margin: 0px;
       }
@@ -79,16 +82,18 @@
         border-radius: 10px;
         background-color: $mainColor;
         color: $secondaryColor;
+        font-size: 18px;
+        min-width: 75%;
+        font-style: italic;
         @include mobile {
           font-size: 1em;
           padding: 10px;
           padding-top: 0;
           overflow: hidden;
         }
-        @media screen and (max-height: 780px) {
+        @media screen and (max-height: 770px) {
           font-size: 14px;
-          
-          }
+        }
       }
     }
   }
@@ -102,7 +107,7 @@
       padding: 5px;
       overflow: hidden;
     }
-    h2{
+    h2 {
       float: right;
       padding-right: 20px;
     }

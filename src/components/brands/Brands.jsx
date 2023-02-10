@@ -32,7 +32,7 @@ export default function Brands() {
               <h2>
                 Air Express services the Phoenix Metropolitan Area, this
                 includes San Tan Valley, Chandler, Scottsdale, Gilbert, Mesa,
-                and Queen creek! Give us a call now or send us a message via our
+                and Queen creek! Give us a call now at +1 480-888-9655 or send us a message via our
                 <a  href="#contact"> contact page</a>.
               </h2>
             </div>

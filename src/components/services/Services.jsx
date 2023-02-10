@@ -39,6 +39,7 @@ export default function Works() {
     direction === "left"
       ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
       : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
+      console.log({currentSlide});
   };
 
   return (

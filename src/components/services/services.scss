@@ -9,25 +9,50 @@
   position: relative;
   h1 {
     display: flex;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    align-items: center;
     color: $secondaryColor;
     font-size: 50px;
     @include mobile {
       font-size: 40px;
+      position: static;
+      transform: none;
     }
   }
-  div {
-    @include mobile {
+  div{
+    @include mobile{
       overflow: hidden;
+      position: static;
+      transform: none;
+
     }
   }
+  
+  .header{
+    @include mobile{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
   .middle {
     display: flex;
     align-items: center;
     margin: 10px;
     padding-bottom: 0.5em;
-
+    position: absolute;
+    top: 100px;
     @include mobile {
-      display: inline;
+      position: static;
+      display: block;
       flex-direction: row;
       align-items: center;
       justify-content: center;
@@ -54,13 +79,13 @@
       display: none;
     }
     &.left {
-      left: 1em;
-      bottom: 12em;
+      left: 50px;
+      bottom: 250px;
       cursor: pointer;
     }
     &.right {
-      right: 1em;
-      bottom: 12em;
+      right: 50px;
+      bottom: 250px;
       cursor: pointer;
     }
   }
@@ -70,6 +95,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 25px;
     transition: all 1s ease-out;
 
     @include mobile {
@@ -85,14 +113,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      @include mobile {
+      @include mobile{
         height: 150px;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         overflow: hidden;
       }
 
       .item {
-        width: 90%;
+        width: 900px;
         height: 100%;
         background-color: $secondaryColor;
         border-radius: 20px;
@@ -101,11 +129,9 @@
         justify-content: center;
 
         @include mobile {
-          width: 90%;
+          width: 80%;
+          height: 150px;
           margin: 15px 0;
-        }
-        @media screen and (max-height: 780px) {
-          font-size: 12px;
         }
 
         .left {
@@ -123,7 +149,7 @@
             flex-direction: column;
             justify-content: space-between;
             color: $mainColor;
-            @include mobile {
+            @include mobile{
               width: 100%;
             }
 
@@ -171,11 +197,11 @@
               text-decoration: underline;
               color: $secondaryColor;
               cursor: pointer;
-              @include mobile {
+              @include mobile{
                 font-size: 12px;
               }
             }
-            .quote {
+            .quote{
               color: $brickRed;
             }
           }
@@ -188,9 +214,9 @@
           justify-content: flex-end;
           margin-right: 30px;
           overflow: hidden;
-          @include mobile {
+          @include mobile{
             flex: 4;
-            margin-right: 10px;
+            margin-right: 20px;
           }
 
           img {
@@ -200,10 +226,6 @@
             @include mobile {
               width: 120px;
               height: 120px;
-            }
-            @media screen and (max-height: 780px) {
-              width: 100px;
-              height: 100px;
             }
           }
         }
