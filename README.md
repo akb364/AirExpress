@@ -1,6 +1,6 @@
 ## Navigate to this URL to check out this project in action!
 
-https://akb364.github.io/AirExpress
+www.airexpress.com
 
 ## Available Scripts
 
