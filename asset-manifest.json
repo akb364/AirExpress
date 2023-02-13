@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/airexpressaz.com/static/css/main.aff05017.css",
-    "main.js": "/airexpressaz.com/static/js/main.fce141b1.js",
-    "static/media/truck.png": "/airexpressaz.com/static/media/truck.531826ce18c8cac60a5e.png",
-    "static/media/repairs.png": "/airexpressaz.com/static/media/repairs.275aa41ab767f6377afb.png",
-    "static/media/tuneUp.png": "/airexpressaz.com/static/media/tuneUp.aca9c8f66451d129e60d.png",
-    "static/media/logo.png": "/airexpressaz.com/static/media/logo.166793b4d07d62ed19e4.png",
-    "static/media/ACUnits.jpeg": "/airexpressaz.com/static/media/ACUnits.ac72332885f26ca786d9.jpeg",
-    "static/media/EastValley.jpeg": "/airexpressaz.com/static/media/EastValley.e01c3e090bef4f1d0faf.jpeg",
-    "index.html": "/airexpressaz.com/index.html",
-    "main.aff05017.css.map": "/airexpressaz.com/static/css/main.aff05017.css.map",
-    "main.fce141b1.js.map": "/airexpressaz.com/static/js/main.fce141b1.js.map"
+    "main.css": "/AirExpress/static/css/main.aff05017.css",
+    "main.js": "/AirExpress/static/js/main.9f5055e5.js",
+    "static/media/truck.png": "/AirExpress/static/media/truck.531826ce18c8cac60a5e.png",
+    "static/media/repairs.png": "/AirExpress/static/media/repairs.275aa41ab767f6377afb.png",
+    "static/media/tuneUp.png": "/AirExpress/static/media/tuneUp.aca9c8f66451d129e60d.png",
+    "static/media/logo.png": "/AirExpress/static/media/logo.166793b4d07d62ed19e4.png",
+    "static/media/ACUnits.jpeg": "/AirExpress/static/media/ACUnits.ac72332885f26ca786d9.jpeg",
+    "static/media/EastValley.jpeg": "/AirExpress/static/media/EastValley.e01c3e090bef4f1d0faf.jpeg",
+    "index.html": "/AirExpress/index.html",
+    "main.aff05017.css.map": "/AirExpress/static/css/main.aff05017.css.map",
+    "main.9f5055e5.js.map": "/AirExpress/static/js/main.9f5055e5.js.map"
   },
   "entrypoints": [
     "static/css/main.aff05017.css",
-    "static/js/main.fce141b1.js"
+    "static/js/main.9f5055e5.js"
   ]
 }
