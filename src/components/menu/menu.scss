@@ -20,6 +20,7 @@
 
   .AirExpress {
     position: absolute;
+    color: $mainColor;
     top: 80px;
     font-size: 18px;
     font-weight: 500;
@@ -30,7 +31,7 @@
     width: 90%;
     margin: 0.5em 0 0.5em 0;
     height: 2px;
-    background-color: $secondaryColor;
+    background-color: $mainColor;
     border: none;
   }
 
@@ -56,6 +57,7 @@
     justify-content: center;
     .icon {
       padding-right: 10px;
+      color: $mainColor;
     }
     a {
       font-size: inherit;
@@ -68,13 +70,14 @@
     span {
       font-weight: 500;
       font-size: 20px;
+      color: $mainColor;
     }
   }
   .socials {
     position: absolute;
     bottom: 0;
     .logo {
-      color: inherit;
+      color: $mainColor;
       text-decoration: none;
       margin-left: 20px;
     }

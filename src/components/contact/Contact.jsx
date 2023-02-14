@@ -24,15 +24,15 @@ export default function Contact() {
         (result) => {
           swal({
             title: "Success!",
-            text: "Message Sent",
-            button: "Sweet!",
+            text: "Thanks, We have recieved your message and will contact you as soon as possible.",
+            button: "Continue",
           });
           e.target.reset();
         },
         (error) => {
           swal({
             title: "Uh oh!",
-            text: "Something went wrong, but you can still email me by clicking my email on the nav bar.",
+            text: "Something went wrong, but you can still email us by clicking the email in the menu or by calling +1 480-888-9655.",
             icon: "error",
             button: "OK",
           });
@@ -58,7 +58,12 @@ export default function Contact() {
           />
           <textarea placeholder="Message" name="message"></textarea>
           <button type="submit">Send</button>
-          {messageOn && <span>Thanks, We have recieved your message and will contact you as soon as possible.</span>}
+          {messageOn && (
+            <span>
+              Thanks, We have recieved your message and will contact you as soon
+              as possible.
+            </span>
+          )}
         </form>
       </div>
       <BottomBar></BottomBar>
