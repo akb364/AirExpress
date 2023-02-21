@@ -6,7 +6,7 @@ export default function Intro({ menuOpen }) {
     <div className="home" id="home">
       <div className="top">
         <div className={"wrapper " + (menuOpen && "active")}>
-          <h1>Welcome to Air Express</h1>
+          <h1>Air Express Heating and Cooling</h1>
           <hr className="hr"></hr>
           <div className="middle">
             <h3 className="bottomText">Trust With Ease</h3>
@@ -18,7 +18,7 @@ export default function Intro({ menuOpen }) {
         </div>
       </div>
       <div className={"bottom " + (menuOpen && "active")}>
-            <span>Commercial and Residential HVAC Services</span>
+        <span>Commercial and Residential HVAC Services</span>
       </div>
     </div>
   );

@@ -63,7 +63,7 @@
         color: $brickRed;
 
         @include mobile {
-          font-size: 40px;
+          font-size: 30px;
         }
         @media screen and (max-height: 780px) {
           padding-bottom: 0em;
