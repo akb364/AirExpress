@@ -45,7 +45,7 @@
   }
 
   .left {
-    flex: .7;
+    flex: 0.7;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -98,7 +98,7 @@
         margin-top: 10px;
 
         @include mobile {
-          width: 400px;
+          width: 80vw;
           height: 30px;
           margin-bottom: 0px;
         }
@@ -110,7 +110,7 @@
         margin-top: 10px;
 
         @include mobile {
-          width: 400px;
+          width: 80vw;
           height: 100px;
           margin-top: 10px;
         }
