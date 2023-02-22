@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.9fa7a20a.css",
+    "main.css": "/static/css/main.59b105a8.css",
     "main.js": "/static/js/main.c45fd197.js",
     "static/media/owner.png": "/static/media/owner.7c81bf82cd279cce8825.png",
     "static/media/truck.png": "/static/media/truck.531826ce18c8cac60a5e.png",
@@ -9,11 +9,11 @@
     "static/media/logo.png": "/static/media/logo.166793b4d07d62ed19e4.png",
     "static/media/EastValley.jpeg": "/static/media/EastValley.e01c3e090bef4f1d0faf.jpeg",
     "index.html": "/index.html",
-    "main.9fa7a20a.css.map": "/static/css/main.9fa7a20a.css.map",
+    "main.59b105a8.css.map": "/static/css/main.59b105a8.css.map",
     "main.c45fd197.js.map": "/static/js/main.c45fd197.js.map"
   },
   "entrypoints": [
-    "static/css/main.9fa7a20a.css",
+    "static/css/main.59b105a8.css",
     "static/js/main.c45fd197.js"
   ]
 }
