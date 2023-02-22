@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.564c266c.css",
-    "main.js": "/static/js/main.c70f4bc6.js",
+    "main.css": "/static/css/main.068cde1b.css",
+    "main.js": "/static/js/main.c45fd197.js",
+    "static/media/owner.png": "/static/media/owner.7c81bf82cd279cce8825.png",
     "static/media/truck.png": "/static/media/truck.531826ce18c8cac60a5e.png",
-    "static/media/repairs.png": "/static/media/repairs.275aa41ab767f6377afb.png",
+    "static/media/repairs.png": "/static/media/repairs.54983e35bad19180e0af.png",
     "static/media/tuneUp.png": "/static/media/tuneUp.aca9c8f66451d129e60d.png",
     "static/media/logo.png": "/static/media/logo.166793b4d07d62ed19e4.png",
-    "static/media/ACUnits.jpeg": "/static/media/ACUnits.ac72332885f26ca786d9.jpeg",
     "static/media/EastValley.jpeg": "/static/media/EastValley.e01c3e090bef4f1d0faf.jpeg",
     "index.html": "/index.html",
-    "main.564c266c.css.map": "/static/css/main.564c266c.css.map",
-    "main.c70f4bc6.js.map": "/static/js/main.c70f4bc6.js.map"
+    "main.068cde1b.css.map": "/static/css/main.068cde1b.css.map",
+    "main.c45fd197.js.map": "/static/js/main.c45fd197.js.map"
   },
   "entrypoints": [
-    "static/css/main.564c266c.css",
-    "static/js/main.c70f4bc6.js"
+    "static/css/main.068cde1b.css",
+    "static/js/main.c45fd197.js"
   ]
 }
