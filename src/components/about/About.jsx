@@ -1,5 +1,5 @@
 import "./about.scss";
-import ACUnit from "../../assets/ACUnits.jpeg";
+import owner from "../../assets/owner.png";
 
 export default function Portfolio() {
   return (
@@ -7,7 +7,7 @@ export default function Portfolio() {
       <h1>About The Owner</h1>
       <div className="wrapper">
         <div className="left">
-          <img src={ACUnit} alt="" />
+          <img src={owner} alt="" />
         </div>
         <div className="right">
           <div className="text">
