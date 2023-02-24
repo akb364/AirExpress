@@ -15,7 +15,7 @@ export default function Brands() {
 
             <div className="text">
               <h2>
-                Here at Air Express Heating and cooling, we service any AC unit
+                Here at Air Express Heating and Cooling, we service any AC unit
                 brand. Additionally, we sell Trane, Daikin, and Goodman AC
                 units. All of our technicians are fully certified and will
                 provide the best HVAC service possible.

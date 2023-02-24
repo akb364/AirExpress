@@ -7,6 +7,7 @@ import ConstructionIcon from "@mui/icons-material/Construction";
 import HomeRepairServiceIcon from "@mui/icons-material/HomeRepairService";
 import TuneUps from "../../assets/tuneUp.png";
 import Repairs from "../../assets/repairs.png";
+import Unit from "../../assets/unit.png";
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -31,7 +32,7 @@ export default function Works() {
       icon: <HomeRepairServiceIcon className="serviceIcon" />,
       title: "Replacement",
       desc: "Removing and replacing old components with new high quality parts.",
-      img: "https://www.publicdomainpictures.net/pictures/10000/nahled/296-1240880976mhKH.jpg",
+      img: Unit,
     },
   ];
 
